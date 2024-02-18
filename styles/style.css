@@ -87,49 +87,49 @@ h6 {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Medium.woff2") format("woff2"), url("/fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("/fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Graphik LCG";
-  src: url("/fonts/GraphikLCG-Regular.woff2") format("woff2"), url("/fonts/GraphikLCG-Regular.woff") format("woff");
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/GraphikLCG-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Graphik LCG";
-  src: url("/fonts/GraphikLCG-Medium.woff2") format("woff2"), url("/fonts/GraphikLCG-Medium.woff") format("woff");
+  src: url("../fonts/GraphikLCG-Medium.woff2") format("woff2"), url("../fonts/GraphikLCG-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/fonts/BebasNeueBold.woff2") format("woff2"), url("/fonts/BebasNeueBold.woff") format("woff");
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -235,7 +235,7 @@ body {
   font-size: 15px;
   line-height: 21px;
   background-color: #272727;
-  background-image: url("../../images/banner-bg.png");
+  background-image: url("../images/banner-bg.png");
   background-position: right;
   background-repeat: no-repeat;
   padding: 12px 150px 12px 20px;
@@ -337,7 +337,7 @@ body {
   margin: 0 35px 0 0;
 }
 .item::before {
-  content: url("../../images/bg-mark.svg");
+  content: url("../images/bg-mark.svg");
   position: absolute;
   top: calc(50% - 35px);
   left: calc(100% - 35px);
@@ -346,7 +346,7 @@ body {
   height: 70px;
 }
 .item::after {
-  content: url("../../images/mark.svg");
+  content: url("../images/mark.svg");
   position: absolute;
   top: calc(50% - 12px);
   left: calc(100% - 15px);
@@ -445,7 +445,7 @@ body {
   letter-spacing: -0.015em;
 }
 .social li:nth-child(5) .social-link {
-  background: url("../../images/vk-bg.svg") no-repeat center;
+  background: url("../images/vk-bg.svg") no-repeat center;
   width: 36px;
   height: 36px;
 }
@@ -579,14 +579,14 @@ body {
     min-height: 80px;
   }
   .item::before {
-    content: url(../../images/bg-mark-mb.svg);
+    content: url(../images/bg-mark-mb.svg);
     top: calc(50% - 25px);
     left: calc(100% - 25px);
     width: 50px;
     height: 50px;
   }
   .item::after {
-    content: url(../../images/mark-mb.svg);
+    content: url(../images/mark-mb.svg);
     top: calc(50% - 12px);
     left: calc(100% - 12.5px);
     width: 25px;

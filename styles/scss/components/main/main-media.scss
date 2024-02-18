@@ -48,7 +48,7 @@
         min-height: 80px;
 
         &::before {
-            content: url(../../images/bg-mark-mb.svg);
+            content: url(../images/bg-mark-mb.svg);
             top: calc(50% - 25px);
             left: calc(100% - 25px);
             width: 50px;
@@ -56,7 +56,7 @@
         }
 
         &::after {
-            content: url(../../images/mark-mb.svg);
+            content: url(../images/mark-mb.svg);
             top: calc(50% - 12px);
             left: calc(100% - 12.5px);
             width: 25px;

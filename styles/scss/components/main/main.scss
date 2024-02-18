@@ -50,7 +50,7 @@
     font-size: 15px;
     line-height: 21px;
     background-color: map-get($color, "gray");
-    background-image: url("../../images/banner-bg.png");
+    background-image: url("../images/banner-bg.png");
     background-position: right;
     background-repeat: no-repeat;
     padding: 12px 150px 12px 20px;
@@ -173,7 +173,7 @@
     margin: 0 35px 0 0;
 
     &::before {
-        content: url("../../images/bg-mark.svg");
+        content: url("../images/bg-mark.svg");
         position: absolute;
         top: calc(50% - 35px);
         left: calc(100% - 35px);
@@ -183,7 +183,7 @@
     }
 
     &::after {
-        content: url("../../images/mark.svg");
+        content: url("../images/mark.svg");
         position: absolute;
         top: calc(50% - 12px);
         left: calc(100% - 15px);
@@ -297,7 +297,7 @@
     & li:nth-child(5) {
         & .social-link {
             @extend %flex;
-            background: url("../../images/vk-bg.svg") no-repeat center;
+            background: url("../images/vk-bg.svg") no-repeat center;
             width: 36px;
             height: 36px;
 
