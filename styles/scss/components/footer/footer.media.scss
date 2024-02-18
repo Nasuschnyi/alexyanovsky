@@ -1,0 +1,67 @@
+@include laptop {
+    .footer {
+        &-title {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &-content {
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        &-list {
+            font-size: 10px;
+            line-height: 12px;
+            gap: 25px;
+        }
+    }
+
+    .telegram {
+        gap: 8px;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 9px 16px;
+    }
+
+    .mail {
+        font-size: 10px;
+        line-height: 12px;
+
+        img {
+            width: 16px;
+            height: 13px;
+            gap: 10px;
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        &-container {
+            margin: 0 10px;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+        }
+
+        &-block {
+            gap: 40px;
+        }
+
+        &-content {
+            gap: 15px;
+            justify-content: space-between;
+        }
+
+        &-list {
+            align-items: center;
+        }
+    }
+}

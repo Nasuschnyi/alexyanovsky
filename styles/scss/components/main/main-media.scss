@@ -1,0 +1,249 @@
+@include desktop {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        align-items: center;
+    }
+}
+
+@include laptop {
+    .banner {
+        gap: 15px;
+        background-image: none;
+    }
+}
+
+@include tablet {
+    .main {
+        padding: 0 0 50px;
+    }
+
+    .content {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0 10px;
+    }
+
+    .page-title {
+        margin: 30px auto 20px;
+        font-size: 20px;
+    }
+
+    .list {
+        gap: 20px 15px;
+    }
+
+    .item {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        padding: 10px 30px 10px 10px;
+        width: 300px;
+        min-height: 80px;
+
+        &::before {
+            content: url(../../images/bg-mark-mb.svg);
+            top: calc(50% - 25px);
+            left: calc(100% - 25px);
+            width: 50px;
+            height: 50px;
+        }
+
+        &::after {
+            content: url(../../images/mark-mb.svg);
+            top: calc(50% - 12px);
+            left: calc(100% - 12.5px);
+            width: 25px;
+            height: 20px;
+        }
+    }
+
+    .article {
+        padding: 40px 10px;
+        gap: 35px;
+    }
+
+    .fieldset {
+        gap: 30px;
+    }
+
+    .social-title {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.01em;
+        margin: 0 0 18px;
+    }
+
+    .label {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.01em;
+    }
+
+    .input {
+        padding: 17px 20px;
+    }
+
+    .share {
+        display: none;
+    }
+
+    .form {
+        .btn {
+            margin: -15px 0 0 0;
+            padding: 14px;
+        }
+    }
+
+    .user {
+        &-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        &-pic {
+            width: 40px;
+            height: 40px;
+        }
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        &-data {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &-text {
+            margin: 20px 0 15px;
+        }
+    }
+}
+
+@include mobile {
+    .banner {
+        width: 95%;
+        margin: 0 10px;
+        padding: 20px 100px 26px 10px;
+        flex-direction: column;
+        gap: 15px;
+
+        &-content {
+            gap: 0;
+
+            &:nth-child(2) {
+                padding: 0;
+            }
+        }
+
+        &-subtitle {
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0em;
+            margin: 0 0 5px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &-title {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0em;
+        }
+
+        &-desc {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0em;
+
+            &.desctop {
+                display: none;
+            }
+
+            &.mobile {
+                display: flex;
+                font-size: 10px;
+                font-weight: 600;
+                line-height: 12px;
+                letter-spacing: 0em;
+                border: 1px solid #5600e1;
+                max-width: 180px;
+                padding: 7px;
+                margin: 0 0 15px;
+            }
+        }
+    }
+
+    .list {
+        margin: 0 10px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
+@include small {
+    .banner {
+        position: relative;
+        padding: 20px 10px 26px 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            height: 26px;
+            width: 100%;
+            background: map-get($color, "gray");
+        }
+
+        &-content {
+            &:first-child {
+                max-width: 221px;
+            }
+        }
+
+        & .btn {
+            position: relative;
+            width: 100%;
+            z-index: 3;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0em;
+            padding: 16px 5px;
+        }
+
+        &-img {
+            transform: scale(0.8);
+            top: 0px;
+            right: -215px;
+        }
+    }
+
+    .social {
+        gap: 20px;
+
+        &-link img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

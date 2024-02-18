@@ -1,0 +1,97 @@
+.footer {
+    background: #090909;
+    border-top: 1px solid #454545;
+    padding: 40px 0;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
+
+    &-title {
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        color: rgba(163, 163, 163, 1);
+        margin: 0 0 8px;
+    }
+
+    &-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: map-get($color, "white");
+
+        &:hover {
+            @extend %opacity;
+            @extend %transition;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+}
+
+.copyright {
+    text-transform: uppercase;
+}
+
+.telegram {
+    @extend %flex;
+    gap: 20px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: map-get($color, "white");
+    border: 1px solid map-get($color, "white");
+    border-radius: 5px;
+    padding: 9px 40px;
+
+    &:hover {
+        @extend %opacity;
+        @extend %transition;
+    }
+}
+
+.mail {
+    @extend %flex;
+    gap: 12px;
+    color: map-get($color, "white");
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+
+    &:hover {
+        @extend %opacity;
+        @extend %transition;
+    }
+}

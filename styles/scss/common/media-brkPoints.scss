@@ -1,0 +1,35 @@
+@mixin desktop-big() {
+    @media (max-width: map-get($brkPoint, "2xl")) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (max-width: map-get($brkPoint, "xl")) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: map-get($brkPoint, "lg")) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: map-get($brkPoint, "md")) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: map-get($brkPoint, "sm")) {
+        @content;
+    }
+}
+
+@mixin small() {
+    @media (max-width: map-get($brkPoint, "xs")) {
+        @content;
+    }
+}

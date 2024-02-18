@@ -1,0 +1,42 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: map-get($color, "dark");
+    color: map-get($color, "white");
+    min-width: 320px;
+}
+
+.container {
+    width: min(100% - 50px, 1520px);
+    margin-inline: auto;
+}
+
+@include tablet {
+    .container {
+        width: min(100% - 10px, 1520px);
+    }
+}
+
+@include mobile {
+    .container {
+        width: 100%;
+    }
+}
+
+.btn {
+    background: #5600e1;
+    padding: 16px;
+    width: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: map-get($color, "white");
+
+    &:hover {
+        @extend %opacity;
+        @extend %transition;
+    }
+}
