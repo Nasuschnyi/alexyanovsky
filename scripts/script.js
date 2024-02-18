@@ -32,9 +32,13 @@ function showImageAndComments() {
 	toggleDisplay(Array.from(comments), 'block');
 }
 
-if (currentHour >= 18 && currentHour < 18) {
+if (currentHour.getHours() === 18 && currentHour.getMinutes() < 20) {
 	showVideoAndComments();
-} else if (currentHour >= 18 && currentHour < 21) {
+} else if (
+	currentHour.getHours() === 18 &&
+	currentHour.getMinutes() >= 20 &&
+	currentHour.getHours() < 21
+) {
 	showVideoBannersTextAndComments();
 } else {
 	showImageAndComments();
